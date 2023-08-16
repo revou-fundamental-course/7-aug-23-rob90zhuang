@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>SEFC 07 Agustus 2023</title>
+</head>
+<body>
+    <h1 style="text-align: center; text-decoration: underline;">Welcome to iCalc</h1>
+    <h4 style="text-align: center;">Hai guys, Selamat datang disitus iCalc ^^,</h4>
+    <h4 style="text-align: center;">Web sederhana ini berfungsi untuk menghitung LUAS dan KELILING Bangun Datar</h4>
+    <hr>
+    <div class="BangunDatar">
+        <div class="Segitiga">Segitiga</div>
+        <div class="MauHitungSegitiga">
+            <div onclick="BukaLuasSegitiga()" class="LuasSegitiga">Luas</div>
+            <div onclick="BukaKelilingSegitiga()" class="KelilingSegitiga">Keliling</div>
+        </div>
+    </div>
+    <div class="BangunDatar">
+        <div class="Persegi">Persegi atau Jajar Genjang</div>
+        <div class="MauHitungPersegi">
+            <div class="LuasPersegi">Luas</div>
+            <div class="KelilingPersegi">Keliling</div>
+        </div>
+    </div>
+    <div class="containerLS" id="PilihLS">
+        <div class="PilihLS">Luas Segitiga</div>
+        <div><img class="GbrLS" id="GbrLS" src="./Asset/Luas Segitiga.jpg" alt="Contoh 1"></div>
+        <p class="KetRumusLS">Rumus Luas Segitiga yaitu :</p>
+        <p class="RumusLS">L = <a class="LS">1/2 x <var>a</var> x <var>t</var></a></p>
+        <ul>Dimana :
+            <li>L = Luas</li>
+            <li><var>a</var> = Panjang Alas</li>
+            <li><var>t</var> = Tinggi</li>            
+        </ul>
+        <hr>
+        <h2>Hitung Luas Segitiga</h2>
+        <div class="inputATS3">
+            <form>
+                <input type="number" id="inputAS" placeholder="Panjang Alas" name="AlsSegi3" step="5" min="0">
+                <input type="number" id="inputTS" placeholder="Tinggi Segitiga" step="5" min="0">
+                <div class="containerHitungLS" id="HLS">
+                    <p class="KetRumusLS">L = 1/2 x <var>a</var> x <var>t</var></p>
+                    <p class="KetRumusLS">L = <p id="resultLS"></p> </p>
+                </div>
+                <input type="reset" onclick="ResetLS()" class="resetNilai" value="Reset">
+            </form>
+                <button type="submit" onclick="HitungLS()" id="btnLS" class="HitungLS">Hitung</button>
+        </div>
+    </div>
+    <div class="containerKS" id="PilihKS">
+        <div class="PilihKS">Keliling Segitiga</div>
+        <div><img class="GbrKS" id="GbrKS" src="./Asset/Keliling Segitiga.jpg" alt="Contoh 2"></div>
+        <p class="KetRumusKS">Rumus Keliling Segitiga yaitu :</p>
+        <p class="RumusKS">K = <a class="KS"><var>a</var> + <var>b</var> + <var>c</var></a></p>
+        <ul>Dimana :
+            <li>K = Keliling</li>
+            <li><var>a</var> = Sisi a</li>
+            <li><var>b</var> = Sisi b</li>
+            <li><var>c</var> = Sisi c</li>
+        </ul>
+        <hr>
+        <h2>Hitung Keliling Segitiga</h2>
+        <div class="inputSisiS3">
+            <form>
+                <input type="number" id="inputSa" placeholder="Sisi a" step="5" min="0">
+                <input type="number" id="inputSb" placeholder="Sisi b" step="5" min="0">
+                <input type="number" id="inputSc" placeholder="Sisi c" step="5" min="0">
+                <div class="containerHitungKS" id="HKS">
+                    <p class="KetRumusKS">K = <var>a</var> + <var>b</var> + <var>c</var></p>
+                    <p class="KetRumusKS">K = <p id="resultKS"></p> </p>
+                </div>
+                <input type="reset" onclick="ResetKS()" class="resetNilai" value="Reset">
+            </form>
+            <button type="submit" onclick="HitungKS()" id="btnKS" class="HitungKS">Hitung</button>
+        </div>
+    </div>
+
+</body>
+</html>

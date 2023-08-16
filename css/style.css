@@ -1,0 +1,203 @@
+body {
+    border: 5px;
+    border-color: lightslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    text-align: left;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+.BangunDatar {
+    width: 100%;
+    border: 2px solid white;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.BangunDatar .Segitiga:hover {
+    background-color: royalblue;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.BangunDatar .Segitiga:hover .Persegi {
+    background: none;
+}
+
+.BangunDatar .Persegi:hover {
+    background-color: royalblue;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.BangunDatar:hover .MauHitungSegitiga {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+.MauHitungSegitiga {
+    display: none;
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.LuasSegitiga:hover {
+    background-color: cyan;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.inputATS3 input {
+    display: block;
+    margin: 10px;
+    width: 95%;
+}
+
+.HitungLS {
+    background-color: royalblue;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.HitungLS:hover {
+    cursor: pointer;
+}
+
+.resetNilai {
+    
+    background-color: royalblue;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.resetNilai:hover {
+    cursor: pointer;
+}
+
+.KelilingSegitiga:hover {
+    background-color: cyan;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.inputSisiS3 input {
+    display: block;
+    margin: 10px;
+    width: 95%;
+}
+
+.HitungKS {
+    background-color: royalblue;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.HitungKS:hover {
+    cursor: pointer;
+}
+
+.BangunDatar:hover .MauHitungPersegi {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+.MauHitungPersegi {
+    display: none;
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.LuasPersegi:hover {
+    background-color: cyan;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.KelilingPersegi:hover {
+    background-color: cyan;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.containerLS {
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.PilihLS {
+    background-color: royalblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.containerHitungLS {
+    display: none;
+}
+
+.KetRumusLS {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.RumusLS {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.containerKS {
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.PilihKS {
+    background-color: royalblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.containerHitungKS {
+    display: none;
+}
+
+.KetRumusKS {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.RumusKS {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.show {display: block;}
+.hide {display: none;}
